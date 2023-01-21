@@ -1,0 +1,67 @@
+* {
+	 box-sizing: border-box;
+	 margin: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    flex-direction: column;
+    font-family: 'Caveat', cursive;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+    margin:0;
+	padding:0;
+	font-family: sans-serif;
+	background: linear-gradient(#141e30, #243b55);
+	background-attachment: fixed;
+}
+
+.topnav {
+  background-color: rgba(0,0,0,.5);
+  overflow: hidden;
+}
+
+.topnav-auth{
+  background-color: #3c4b66;
+}
+
+.topnav a {
+  float: right;
+  color: #03e9f4;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 4px;
+  top: 0;
+  right: 0;
+}
+
+.topnav #back{
+  float: left;
+  color: whitesmoke;
+    margin-left: 10px;
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+
+.topnav a:hover {
+  color: white;
+}
+
+
+
+.card{
+    background-color: aliceblue;
+}
+
+#excel_data{
+    position: absolute;
+    left: 0;
+    background-color: aliceblue;
+    width: 100vw;
+}

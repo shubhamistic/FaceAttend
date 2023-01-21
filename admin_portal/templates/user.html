@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='user.css') }}"/>
+    <title>Username</title>
+  </head>
+
+  <body>
+    <div class="topnav topnav-auth">
+          <a id="heading">RECORDS</a>
+          <a href="/">LOGOUT</a>
+    </div>
+
+  <div id="info_section">
+    {%for date in attendance_record%}
+        <div class="attendance-item">
+          <ul>
+            <li>{{ date[0] }}</li>
+          </ul>
+
+          <form method="POST" action="/xlsx">
+            <input type="hidden" name="date" value="{{ date[0] }}">
+            <button class="show_button" type="text">
+              SHOW EXCEL FILE
+            </button>
+          </form>
+
+          <form method="POST" action="/download">
+            <input type="hidden" name="filename" value="{{ date[0] }}">
+            <button class="show_button" type="text">
+              DOWNLOAD
+            </button>
+          </form>
+        </div>
+    {%endfor%}
+  </div>
+  </body>
+</html>
